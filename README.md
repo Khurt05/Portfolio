@@ -1,5 +1,5 @@
 # Portfolio
-A personal Portfolio showcasing me and my small achievment through out my college days
+A personal Portfolio showcasing me and my small achievement through out my college days
 
 # Khurt Hortilano — Portfolio
 
