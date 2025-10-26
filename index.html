@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khurt Cloed Larry Hortilano</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="brand" href="#">Khurt Hortilano</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div>
+                    <h1 id="hero-title" class="lead">Khurt Cloed Larry Hortilano</h1>
+                    <p>Responsive, accessible, and device-friendly portfolio starter. Scales across phones, tablets, and desktops using fluid typography, flexible layout, and breakpoints.</p>
+                    <p><a class="btn" href="#projects">View projects</a></p>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <img class="responsive" src="images/tyler.jpg" alt="Illustration representing projects and portfolio">
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <p>Short bio or introduction goes here. Keep content concise and let the layout adapt to any screen size.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="grid" role="list">
+                    <article role="listitem">
+                        <h3>Project One</h3>
+                        <p>Brief description — responsive card layout.</p>
+                    </article>
+                    <article role="listitem">
+                        <h3>Project Two</h3>
+                        <p>Brief description — responsive card layout.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy; <span id="year"></span> Khurt Cloed. Built to be responsive.</small>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        (function(){ 
+            const firstFocusable = document.querySelector('a, button');
+            if(firstFocusable) firstFocusable.setAttribute('tabindex','0');
+        })();
+    </script>
+</body>
+</html>
